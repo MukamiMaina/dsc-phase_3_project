@@ -93,10 +93,15 @@ Feature importance analysis helps identify which features have the most influenc
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/e0becf9e-f92d-4d6e-83d1-232d683088c1)
 
  The top five most important features that determine customer churn include:
+ 
 a.	Customer service charge
+
 b.	Total day minutes 
+
 c.	Total day charge 
+
 d.	Voice mail plan
+
 e.	Area code
 
 ### Graph of Churn against Area code
@@ -129,6 +134,7 @@ The best model is the Gradient boosting classifier with an accuracy score of 0.9
 
 ## Visualization of ROC Curve of Gradient Boosting Classifier.
  
+![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/f83116c1-74d2-4ae9-b5b8-fea5f98f5bc0)
 
 ## Limitations
 ●	Fine Tuning Constraints: Fine-tuning hyperparameters can be time-consuming, especially for models with complex architectures or large parameter spaces.
