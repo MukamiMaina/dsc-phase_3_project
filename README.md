@@ -1,27 +1,29 @@
-# Business Understanding
-## Background and Overview
+# SyriaTel Customer Churn Model Prediction
+
+## Business Understanding
+### Background and Overview
 The project involves the development of a predictive model for customer churn using the available dataset, aiming to identify customers at risk of leaving the service. 
 
 This project directly concerns stakeholders such as the marketing and sales teams, customer service departments, and upper management, with the potential to significantly impact customer retention and overall profitability. 
 
 While the primary data source is the provided customer dataset, the project's scope encompasses the development and validation of the predictive model, along with the identification of key features influencing churn. Stakeholders' understanding and alignment regarding the project's objectives, scope, and expected outcomes are crucial, as clear communication is vital to ensure a unified understanding across different parts of the organization.
 
-## Business problem
+### Business problem
 SyriaTel, a leading telecommunications company, is facing challenges with customer churn, where customers discontinue their services with the company. Customer churn not only results in revenue loss but also impacts the company's reputation and market competitiveness.
 
 To mitigate this issue, SyriaTel aims to identify predictive patterns and develop a robust classifier to forecast whether a customer is likely to churn in the near future.
 
-## Objectives 
+### Objectives 
 This project aims:
 1.	To develop a binary classification, model that forecasts if a client will "soon" terminate their relationship with SyriaTel.
 2.	To determine what factors influence customer churn
 3.	To determine the best model for predicting customer churn
 4.	To evaluate how insights from feature importance can help improve customer churn
 
-## Significance
+### Significance
 By accurately identifying customers at risk of churn, the company can proactively implement retention strategies to mitigate churn and enhance customer loyalty.   
 
-## Research Questions
+### Research Questions
 The project aims to answer the following questions: 
 
 •	What were the factors influencing customer churn? 
@@ -30,7 +32,7 @@ The project aims to answer the following questions:
 
 •	How can the insights from feature importance help improve customer churn?
 
-# Data Understanding
+## Data Understanding
 The data is from SyriaTel Communication company retrieved from Kaggle (link: https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset/data). 
 
 The structure of the data included 21 columns and 3333 rows. 
@@ -70,7 +72,7 @@ ii.	Categorical data was transformed into numerical data with LabelEncoder.
 
 iii. Normalizing numeric data using MinMaxSccaler.
 
-# Modelling
+## Modelling
 Modelling considerations: 
 1. Task Type: This project involves classification to predict customer churn.
 2. Models: We'll experiment with logistic regression, decision trees, random forests, and gradient boosting. 
@@ -80,14 +82,14 @@ Modelling considerations:
 6. Loss Functions: We'll use entropy loss and gini for model training. 
 7. Performance Threshold: Success will be determined by achieving predefined performance metrics thresholds. These considerations guide our model selection, training, and evaluation process, ensuring effective churn prediction.
 
-# Evaluation
+## Evaluation
 The metrics used to evaluate models:
 a.	Accuracy score
 b.	Area under curve (AUC)
 The best model is selected best on high performance.
 
-# Findings of EDA
-## Feature Importance
+## Findings of EDA
+### Feature Importance
 Feature importance analysis helps identify which features have the most influence on predicting churn. By knowing which factors contribute the most to churn, the company can prioritize them in its retention strategies and focus resources on addressing those factors effectively.
 
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/e0becf9e-f92d-4d6e-83d1-232d683088c1)
@@ -104,19 +106,19 @@ d.	Voice mail plan
 
 e.	Area code
 
-### Graph of Churn against Area code
+#### Graph of Churn against Area code
 
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/0f7b3fab-d804-4370-b39e-d55e656d3387)
 
-### Graph of Churn against Customer Service Calls
+#### Graph of Churn against Customer Service Calls
  
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/38afa26d-761f-427b-915d-0be86c925229)
 
-### Graph of Churn against Voice Mail Plan
+#### Graph of Churn against Voice Mail Plan
 
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/ca5b0b7d-6850-4cd8-b730-ea47aecbe54a)
 
-## Models’ Results
+### Models’ Results
 
 | Model              | Technique       | Training Accuracy | Testing Accuracy | AUC    |
 |--------------------|-----------------|-------------------|------------------|--------|
@@ -132,18 +134,18 @@ e.	Area code
 
 The best model is the Gradient boosting classifier with an accuracy score of 0.9100 for the test and 0.9098 for training. This model tends to be more robust to overfitting compared to other models. This model demonstrates good generalization ability. 
 
-## Visualization of ROC Curve of Gradient Boosting Classifier.
+### Visualization of ROC Curve of Gradient Boosting Classifier.
  
 ![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/f83116c1-74d2-4ae9-b5b8-fea5f98f5bc0)
 
-## Limitations
+### Limitations
 ●	Fine Tuning Constraints: Fine-tuning hyperparameters can be time-consuming, especially for models with complex architectures or large parameter spaces.
 
 ●	Computation Costs of Models with Large Parameter Spaces: Models like ensemble methods with numerous estimators require significant computational resources for training and evaluation. Training time may increase exponentially with the parameter space size, limiting scalability and applicability. High computational costs may restrict deployment in real-time or resource-constrained environments.
 
 ●	Need for Comprehensive Pre-Modelling Analysis: Adequate feature engineering and exploratory data analysis are vital for identifying relevant features and understanding data distribution. Inadequate data preprocessing may lead to suboptimal performance or biased predictions. Insufficient data exploration before modelling may overlook crucial patterns, affecting interpretability and generalization.
 
-## Recommendations 
+### Recommendations 
 a.	Customer Segmentation: Utilize the identified key features, such as total day charge, customer service call, voice mail plan, area code, and total day minutes, to segment customers based on their churn risk levels. 
 
 b.	Tailor retention strategies and marketing campaigns to address the specific needs and behaviors of each segment. 
@@ -166,13 +168,13 @@ c.	Use Gradient Boosting classifier as the model of choice for forecasting. The 
 
 d.	Intensive exploratory Data Analysis (EDA): Perform comprehensive exploratory data analysis to uncover hidden patterns and insights in the data. Visualizations and descriptive statistical analyses can help identify relationships between features and the target variable, guiding feature selection and modeling decisions. 
 
-## Conclusion
+### Conclusion
 In conclusion, based on the model's accuracy and AUC scores, the Gradient Boosting classifier is the best model to predict the churn of SyriaTel's customers towards strategizing, saving costs, and prioritizing resources to increase profits. Also, customer service calls, total day charge, total day minutes, voice mail plan, and area codes are the most important that determine whether a customer will churn or not.
 
-## Future Work
+### Future Work
 ●	Explore advanced machine learning techniques, such as deep learning or ensemble methods, to further improve predictive accuracy and model performance.
 
-## REPOSITORY STRUCTURE
+### REPOSITORY STRUCTURE
 • Data: Contains the raw CSV dataset ("bigml_59c28831336c6604c800002a.csv") from Syrian Tel Communication used for analysis.
 
 • Notebooks: Includes Jupyter Notebooks detailing the entire analysis process.
