@@ -90,8 +90,9 @@ The best model is selected best on high performance.
 ## Feature Importance
 Feature importance analysis helps identify which features have the most influence on predicting churn. By knowing which factors contribute the most to churn, the company can prioritize them in its retention strategies and focus resources on addressing those factors effectively.
 
- 
-The top five most important features that determine customer churn include:
+![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/e0becf9e-f92d-4d6e-83d1-232d683088c1)
+
+ The top five most important features that determine customer churn include:
 a.	Customer service charge
 b.	Total day minutes 
 c.	Total day charge 
