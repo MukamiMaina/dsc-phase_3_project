@@ -99,14 +99,11 @@ c.	Total day charge
 d.	Voice mail plan
 e.	Area code
 
-
-
-
-
-
 Graph of Churn against Area code
- 
-Graph of Churn against Customer Service Calls
+
+![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/0f7b3fab-d804-4370-b39e-d55e656d3387)
+
+ Graph of Churn against Customer Service Calls
  
 
 
