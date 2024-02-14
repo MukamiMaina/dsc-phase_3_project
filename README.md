@@ -109,9 +109,9 @@ e.	Area code
 
 ### Graph of Churn against Voice Mail Plan
 
+![image](https://github.com/MukamiMaina/dsc-phase_3_project/assets/142358601/ca5b0b7d-6850-4cd8-b730-ea47aecbe54a)
 
- 
-Models’ Results
+## Models’ Results
 
 | Model              | Technique       | Training Accuracy | Testing Accuracy | AUC    |
 |--------------------|-----------------|-------------------|------------------|--------|
@@ -125,8 +125,9 @@ Models’ Results
 | Gradient Boosting  | SMOTE           | 0.9098            | 0.9100           | 0.9091 |
 
 
-The best model is gradient boosting classifier with an accuracy score of 0.9100 for test and 0.9098 for training. This model tends to be more robust to overfitting compared to other models. This model demonstrates good generalization ability. 
-Visualization of ROC Curve of Gradient Boosting Classifier.
+The best model is the Gradient boosting classifier with an accuracy score of 0.9100 for the test and 0.9098 for training. This model tends to be more robust to overfitting compared to other models. This model demonstrates good generalization ability. 
+
+## Visualization of ROC Curve of Gradient Boosting Classifier.
  
 
 ## Limitations
